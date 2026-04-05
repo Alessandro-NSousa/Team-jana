@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal Trainer especializado em consultoria personalizada, atendimento online e presencial. Transforme sua saúde com acompanhamento profissional.">
+    <meta name="keywords" content="personal trainer, consultoria fitness, treinamento personalizado, pilates, grupos especiais">
+    <title>#TeamJana - Personal Trainer e Consultoria Fitness</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'purple-deep': '#1a0b2e',
+                        'purple-dark': '#2e1065',
+                        'purple-medium': '#4c1d95',
+                        'magenta': '#ec4899',
+                        'magenta-light': '#f0abfc',
+                        'magenta-bright': '#d946ef'
+                    },
+                    fontFamily: {
+                        'sans': ['Inter', 'system-ui', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gray-900 text-white font-sans antialiased">
+    
+    <!-- Hero Section -->
+    <section id="hero" class="relative min-h-screen flex items-center overflow-hidden">
+        <!-- Background gradient -->
+        <div class="absolute inset-0 bg-gradient-to-br from-purple-deep via-purple-dark to-purple-medium"></div>
+        
+        <!-- Animated background circles -->
+        <div class="absolute inset-0 overflow-hidden opacity-20">
+            <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-magenta-bright rounded-full blur-3xl animate-pulse"></div>
+            <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-magenta rounded-full blur-3xl animate-pulse delay-1000"></div>
+        </div>
+        
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <!-- Text Content -->
+                <div class="text-left space-y-6 fade-in">
+                    <div class="inline-block">
+                        <span class="bg-gradient-to-r from-magenta-bright to-magenta text-transparent bg-clip-text text-sm font-bold uppercase tracking-wider">#TEAMJANA</span>
+                    </div>
+                    
+                    <h1 class="text-5xl sm:text-6xl lg:text-7xl font-black leading-tight">
+                        Transforme Seu 
+                        <span class="bg-gradient-to-r from-magenta-bright via-magenta to-magenta-light text-transparent bg-clip-text">Corpo e Mente</span>
+                    </h1>
+                    
+                    <p class="text-xl sm:text-2xl text-gray-300 leading-relaxed">
+                        Consultoria fitness personalizada com resultados comprovados. 
+                        Atendimento online, presencial e pilates para todos os níveis.
+                    </p>
+                    
+                    <!-- Authority indicators -->
+                    <div class="flex flex-wrap gap-6 py-4">
+                        <div class="flex items-center gap-2">
+                            <i class="fas fa-award text-magenta-bright text-2xl"></i>
+                            <div>
+                                <p class="font-bold text-lg">+10 Anos</p>
+                                <p class="text-sm text-gray-400">de Experiência</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <i class="fas fa-users text-magenta-bright text-2xl"></i>
+                            <div>
+                                <p class="font-bold text-lg">+500 Clientes</p>
+                                <p class="text-sm text-gray-400">Atendidos</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <i class="fas fa-star text-magenta-bright text-2xl"></i>
+                            <div>
+                                <p class="font-bold text-lg">4.9/5</p>
+                                <p class="text-sm text-gray-400">Avaliação</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- CTAs -->
+                    <div class="flex flex-col sm:flex-row gap-4 pt-4">
+                        <a href="#contato" class="btn-primary group">
+                            <i class="fab fa-whatsapp text-xl"></i>
+                            Falar com Especialista
+                            <i class="fas fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
+                        </a>
+                        <a href="#servicos" class="btn-secondary">
+                            Saiba Mais
+                            <i class="fas fa-chevron-down"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Image/Media Column -->
+                <div class="relative fade-in delay-300">
+                    <div class="relative z-10">
+                        <img src="assets/janaina-hero.png"
+                             alt="Personal Training"
+                             class="object-cover h-[650px]"
+                             style="object-position: center 20%;">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Scroll indicator -->
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <i class="fas fa-chevron-down text-magenta-bright text-2xl"></i>
+        </div>
+    </section>
+
+    <!-- Authority Section -->
+    <section id="sobre" class="py-24 bg-gradient-to-b from-purple-medium to-purple-dark relative overflow-hidden">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <!-- Photo -->
+                <div class="order-2 lg:order-1 fade-in-left">
+                    <div class="relative">
+                        <img src="assets/janaina-sobre.png"
+                             alt="Jana - Personal Trainer"
+                             class="relative rounded-2xl shadow-2xl w-full h-[500px] object-contain bg-purple-dark">
+                    </div>
+                </div>
+                
+                <!-- Content -->
+                <div class="order-1 lg:order-2 space-y-6 fade-in-right">
+                    <span class="text-magenta-bright font-bold uppercase tracking-wider">Quem Somos</span>
+                    <h2 class="text-4xl sm:text-5xl font-black leading-tight">
+                        Autoridade em 
+                        <span class="bg-gradient-to-r from-magenta-bright to-magenta text-transparent bg-clip-text">Transformação Fitness</span>
+                    </h2>
+                    
+                    <p class="text-lg text-gray-300 leading-relaxed">
+                        Com mais de uma década de experiência, a #TEAMJANA se consolidou como referência em consultoria fitness personalizada. Nossa metodologia exclusiva combina ciência do movimento, nutrição estratégica e suporte psicológico para resultados duradouros.
+                    </p>
+                    
+                    <p class="text-lg text-gray-300 leading-relaxed">
+                        Especializados no atendimento de personal trainers, empresários e profissionais que buscam excelência física e mental para potencializar seus resultados pessoais e profissionais.
+                    </p>
+                    
+                    <div class="pt-4">
+                        <a href="#contato" class="btn-secondary inline-flex items-center gap-2">
+                            Agende uma Avaliação Gratuita
+                            <i class="fas fa-calendar-check"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servicos" class="py-24 bg-purple-deep relative overflow-hidden">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Header -->
+            <div class="text-center max-w-3xl mx-auto mb-16 fade-in">
+                <span class="text-magenta-bright font-bold uppercase tracking-wider">Nossos Serviços</span>
+                <h2 class="text-4xl sm:text-5xl font-black mt-4 mb-6">
+                    Soluções Completas Para 
+                    <span class="bg-gradient-to-r from-magenta-bright to-magenta text-transparent bg-clip-text">Sua Evolução</span>
+                </h2>
+                <p class="text-xl text-gray-300">
+                    Programas personalizados desenvolvidos especificamente para suas necessidades e objetivos
+                </p>
+            </div>
+            
+            <!-- Services Grid -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service Card 1 -->
+                <div class="service-card group">
+                    <div class="text-center space-y-4">
+                        <div class="icon-container">
+                            <i class="fas fa-user-tie text-4xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold">Consultoria Personalizada</h3>
+                        <p class="text-gray-400">
+                            Acompanhamento individual com plano estratégico de treino, nutrição e mindset para resultados exponenciais.
+                        </p>
+                        <a href="#contato" class="inline-flex items-center gap-2 text-magenta-bright hover:text-magenta transition-colors font-semibold">
+                            Saiba Mais <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Service Card 2 -->
+                <div class="service-card group">
+                    <div class="text-center space-y-4">
+                        <div class="icon-container">
+                            <i class="fas fa-laptop text-4xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold">Atendimento Online</h3>
+                        <p class="text-gray-400">
+                            Treinamento remoto com acompanhamento diário via app. Flexibilidade para treinar onde e quando quiser.
+                        </p>
+                        <a href="#contato" class="inline-flex items-center gap-2 text-magenta-bright hover:text-magenta transition-colors font-semibold">
+                            Saiba Mais <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Service Card 3 -->
+                <div class="service-card group">
+                    <div class="text-center space-y-4">
+                        <div class="icon-container">
+                            <i class="fas fa-dumbbell text-4xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold">Plano de Treino Personalizado</h3>
+                        <p class="text-gray-400">
+                            Programas de treino sob medida com ajustes progressivos baseados em seus resultados e feedback.
+                        </p>
+                        <a href="#contato" class="inline-flex items-center gap-2 text-magenta-bright hover:text-magenta transition-colors font-semibold">
+                            Saiba Mais <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Service Card 4 -->
+                <div class="service-card group">
+                    <div class="text-center space-y-4">
+                        <div class="icon-container">
+                            <i class="fas fa-spa text-4xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold">Pilates Individual</h3>
+                        <p class="text-gray-400">
+                            Sessões de pilates personalizadas em domicílio ou academia, focadas em força, flexibilidade e postura.
+                        </p>
+                        <a href="#contato" class="inline-flex items-center gap-2 text-magenta-bright hover:text-magenta transition-colors font-semibold">
+                            Saiba Mais <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Service Card 5 -->
+                <div class="service-card group">
+                    <div class="text-center space-y-4">
+                        <div class="icon-container">
+                            <i class="fas fa-users text-4xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold">Pilates em Grupo</h3>
+                        <p class="text-gray-400">
+                            Aulas em grupo com até 6 pessoas. Ambiente motivador e custo acessível sem perder qualidade.
+                        </p>
+                        <a href="#contato" class="inline-flex items-center gap-2 text-magenta-bright hover:text-magenta transition-colors font-semibold">
+                            Saiba Mais <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Service Card 6 -->
+                <div class="service-card group">
+                    <div class="text-center space-y-4">
+                        <div class="icon-container">
+                            <i class="fas fa-heart text-4xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold">Grupos Especiais</h3>
+                        <p class="text-gray-400">
+                            Atendimento especializado para idosos, gestantes e pessoas com necessidades específicas de mobilidade.
+                        </p>
+                        <a href="#contato" class="inline-flex items-center gap-2 text-magenta-bright hover:text-magenta transition-colors font-semibold">
+                            Saiba Mais <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Differentials Section -->
+    <section id="diferenciais" class="py-24 bg-gradient-to-b from-purple-dark to-purple-medium relative overflow-hidden">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Header -->
+            <div class="text-center max-w-3xl mx-auto mb-16 fade-in">
+                <span class="text-magenta-bright font-bold uppercase tracking-wider">Por Que Escolher a #TeamJana</span>
+                <h2 class="text-4xl sm:text-5xl font-black mt-4 mb-6">
+                    Diferenciais que 
+                    <span class="bg-gradient-to-r from-magenta-bright to-magenta text-transparent bg-clip-text">Transformam</span>
+                </h2>
+            </div>
+            
+            <!-- Differentials Grid -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="differential-card fade-in">
+                    <i class="fas fa-bullseye text-5xl text-magenta-bright mb-4"></i>
+                    <h3 class="text-xl font-bold mb-3">Atendimento Personalizado</h3>
+                    <p class="text-gray-400">
+                        Cada cliente tem um plano único, desenvolvido especificamente para seus objetivos e biotipo.
+                    </p>
+                </div>
+                
+                <div class="differential-card fade-in delay-100">
+                    <i class="fas fa-chart-line text-5xl text-magenta-bright mb-4"></i>
+                    <h3 class="text-xl font-bold mb-3">Metodologia Validada</h3>
+                    <p class="text-gray-400">
+                        Sistema comprovado baseado em ciência do esporte e mais de 10 anos de refinamento prático.
+                    </p>
+                </div>
+                
+                <div class="differential-card fade-in delay-200">
+                    <i class="fas fa-trophy text-5xl text-magenta-bright mb-4"></i>
+                    <h3 class="text-xl font-bold mb-3">Resultados Mensuráveis</h3>
+                    <p class="text-gray-400">
+                        Acompanhamento por métricas objetivas com avaliações periódicas e ajustes precisos.
+                    </p>
+                </div>
+                
+                <div class="differential-card fade-in delay-300">
+                    <i class="fas fa-seedling text-5xl text-magenta-bright mb-4"></i>
+                    <h3 class="text-xl font-bold mb-3">Crescimento Sustentável</h3>
+                    <p class="text-gray-400">
+                        Foco em hábitos duradouros e evolução constante, não em soluções milagrosas temporárias.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results/Metrics Section -->
+    <section class="py-24 bg-purple-deep relative overflow-hidden">
+        <!-- Animated background -->
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute top-0 left-1/4 w-64 h-64 bg-magenta-bright rounded-full blur-3xl"></div>
+            <div class="absolute bottom-0 right-1/4 w-64 h-64 bg-magenta rounded-full blur-3xl"></div>
+        </div>
+        
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-4xl sm:text-5xl font-black mb-6">
+                    Números que 
+                    <span class="bg-gradient-to-r from-magenta-bright to-magenta text-transparent bg-clip-text">Impressionam</span>
+                </h2>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center space-y-3 fade-in">
+                    <p class="text-6xl font-black text-magenta-bright counter" data-target="500">0</p>
+                    <p class="text-xl text-gray-300">Clientes Atendidos</p>
+                </div>
+                
+                <div class="text-center space-y-3 fade-in delay-100">
+                    <p class="text-6xl font-black text-magenta-bright">
+                        <span class="counter" data-target="85">0</span>%
+                    </p>
+                    <p class="text-xl text-gray-300">Crescimento Médio</p>
+                </div>
+                
+                <div class="text-center space-y-3 fade-in delay-200">
+                    <p class="text-6xl font-black text-magenta-bright counter" data-target="10">0</p>
+                    <p class="text-xl text-gray-300">Anos de Mercado</p>
+                </div>
+                
+                <div class="text-center space-y-3 fade-in delay-300">
+                    <p class="text-6xl font-black text-magenta-bright">
+                        <span class="counter" data-target="95">0</span>%
+                    </p>
+                    <p class="text-xl text-gray-300">Taxa de Satisfação</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="depoimentos" class="py-24 bg-gradient-to-b from-purple-medium to-purple-dark relative overflow-hidden">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Header -->
+            <div class="text-center max-w-3xl mx-auto mb-16 fade-in">
+                <span class="text-magenta-bright font-bold uppercase tracking-wider">Depoimentos</span>
+                <h2 class="text-4xl sm:text-5xl font-black mt-4 mb-6">
+                    O Que Nossos Clientes 
+                    <span class="bg-gradient-to-r from-magenta-bright to-magenta text-transparent bg-clip-text">Dizem</span>
+                </h2>
+            </div>
+            
+            <!-- Testimonials Grid -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card fade-in">
+                    <div class="flex mb-4">
+                        <i class="fas fa-star text-magenta-bright"></i>
+                        <i class="fas fa-star text-magenta-bright"></i>
+                        <i class="fas fa-star text-magenta-bright"></i>
+                        <i class="fas fa-star text-magenta-bright"></i>
+                        <i class="fas fa-star text-magenta-bright"></i>
+                    </div>
+                    <p class="text-gray-300 mb-6 italic">
+                        "A metodologia da Jana transformou não só meu corpo, mas minha mentalidade. Em 6 meses perdi 15kg e ganhei uma disciplina que aplicho em todos os aspectos da minha vida."
+                    </p>
+                    <div class="flex items-center gap-4">
+                        <img src="https://i.pravatar.cc/150?img=12" alt="Cliente" class="w-12 h-12 rounded-full">
+                        <div>
+                            <p class="font-bold">Carlos Silva</p>
+                            <p class="text-sm text-gray-400">CEO, TechStart</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card fade-in delay-100">
+                    <div class="flex mb-4">
+                        <i class="fas fa-star text-magenta-bright"></i>
+                        <i class="fas fa-star text-magenta-bright"></i>
+                        <i class="fas fa-star text-magenta-bright"></i>
+                        <i class="fas fa-star text-magenta-bright"></i>
+                        <i class="fas fa-star text-magenta-bright"></i>
+                    </div>
+                    <p class="text-gray-300 mb-6 italic">
+                        "Como empresária, meu tempo é escasso. O atendimento online me permitiu manter consistência e os resultados superaram minhas expectativas. Recomendo!"
+                    </p>
+                    <div class="flex items-center gap-4">
+                        <img src="https://i.pravatar.cc/150?img=47" alt="Cliente" class="w-12 h-12 rounded-full">
+                        <div>
+                            <p class="font-bold">Mariana Costa</p>
+                            <p class="text-sm text-gray-400">Empresária</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card fade-in delay-200">
+                    <div class="flex mb-4">
+                        <i class="fas fa-star text-magenta-bright"></i>
+                        <i class="fas fa-star text-magenta-bright"></i>
+                        <i class="fas fa-star text-magenta-bright"></i>
+                        <i class="fas fa-star text-magenta-bright"></i>
+                        <i class="fas fa-star text-magenta-bright"></i>
+                    </div>
+                    <p class="text-gray-300 mb-6 italic">
+                        "O pilates em grupo é incrível! Além dos benefícios físicos, criei amizades e encontrei uma motivação extra para manter a rotina de exercícios."
+                    </p>
+                    <div class="flex items-center gap-4">
+                        <img src="https://i.pravatar.cc/150?img=32" alt="Cliente" class="w-12 h-12 rounded-full">
+                        <div>
+                            <p class="font-bold">Ana Paula Rodrigues</p>
+                            <p class="text-sm text-gray-400">Gestora</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 4 -->
+                <div class="testimonial-card fade-in delay-300">
+                    <div class="flex mb-4">
+                        <i class="fas fa-star text-magenta-bright"></i>
+                        <i class="fas fa-star text-magenta-bright"></i>
+                        <i class="fas fa-star text-magenta-bright"></i>
+                        <i class="fas fa-star text-magenta-bright"></i>
+                        <i class="fas fa-star text-magenta-bright"></i>
+                    </div>
+                    <p class="text-gray-300 mb-6 italic">
+                        "Profissionalismo e atenção aos detalhes fazem toda diferença. A Jana entende minhas limitações e sempre ajusta os treinos para garantir progresso seguro."
+                    </p>
+                    <div class="flex items-center gap-4">
+                        <img src="https://i.pravatar.cc/150?img=68" alt="Cliente" class="w-12 h-12 rounded-full">
+                        <div>
+                            <p class="font-bold">Roberto Santos</p>
+                            <p class="text-sm text-gray-400">Diretor de Vendas</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 5 -->
+                <div class="testimonial-card fade-in delay-400">
+                    <div class="flex mb-4">
+                        <i class="fas fa-star text-magenta-bright"></i>
+                        <i class="fas fa-star text-magenta-bright"></i>
+                        <i class="fas fa-star text-magenta-bright"></i>
+                        <i class="fas fa-star text-magenta-bright"></i>
+                        <i class="fas fa-star text-magenta-bright"></i>
+                    </div>
+                    <p class="text-gray-300 mb-6 italic">
+                        "Melhor investimento que já fiz em mim mesma. O acompanhamento é próximo, humanizado e os resultados aparecem de forma consistente. Estou mais forte e confiante!"
+                    </p>
+                    <div class="flex items-center gap-4">
+                        <img src="https://i.pravatar.cc/150?img=45" alt="Cliente" class="w-12 h-12 rounded-full">
+                        <div>
+                            <p class="font-bold">Juliana Mendes</p>
+                            <p class="text-sm text-gray-400">Advogada</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 6 -->
+                <div class="testimonial-card fade-in delay-500">
+                    <div class="flex mb-4">
+                        <i class="fas fa-star text-magenta-bright"></i>
+                        <i class="fas fa-star text-magenta-bright"></i>
+                        <i class="fas fa-star text-magenta-bright"></i>
+                        <i class="fas fa-star text-magenta-bright"></i>
+                        <i class="fas fa-star text-magenta-bright"></i>
+                    </div>
+                    <p class="text-gray-300 mb-6 italic">
+                        "Treino há 3 anos com a Jana e posso dizer: ela não é apenas uma profissional excepcional, é uma mentora que me inspira a ser melhor todos os dias."
+                    </p>
+                    <div class="flex items-center gap-4">
+                        <img src="https://i.pravatar.cc/150?img=15" alt="Cliente" class="w-12 h-12 rounded-full">
+                        <div>
+                            <p class="font-bold">Fernando Lima</p>
+                            <p class="text-sm text-gray-400">Empreendedor</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="py-24 bg-gradient-to-br from-magenta-bright via-magenta to-purple-dark relative overflow-hidden">
+        <div class="absolute inset-0 opacity-20">
+            <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-white rounded-full blur-3xl animate-pulse"></div>
+        </div>
+        
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+            <div class="max-w-4xl mx-auto space-y-8 fade-in">
+                <h2 class="text-5xl sm:text-6xl font-black leading-tight">
+                    Pronto Para Transformar Sua Vida?
+                </h2>
+                <p class="text-2xl text-white/90">
+                    Não deixe para amanhã a mudança que pode começar hoje. 
+                    <br>Agende sua avaliação gratuita agora!
+                </p>
+                
+                <div class="flex flex-col sm:flex-row gap-4 justify-center pt-6">
+                    <a href="https://wa.me/5511999999999?text=Olá!%20Gostaria%20de%20agendar%20uma%20avaliação%20gratuita" 
+                       target="_blank"
+                       class="inline-flex items-center justify-center gap-3 bg-white text-purple-dark px-8 py-4 rounded-full text-lg font-bold hover:bg-gray-100 transition-all shadow-2xl hover:shadow-white/50 hover:scale-105">
+                        <i class="fab fa-whatsapp text-2xl"></i>
+                        Falar Agora no WhatsApp
+                    </a>
+                    <a href="#contato" 
+                       class="inline-flex items-center justify-center gap-3 bg-purple-deep text-white px-8 py-4 rounded-full text-lg font-bold hover:bg-purple-dark transition-all border-2 border-white/30 hover:scale-105">
+                        <i class="fas fa-envelope"></i>
+                        Preencher Formulário
+                    </a>
+                </div>
+                
+                <p class="text-sm text-white/70 pt-4">
+                    <i class="fas fa-lock mr-2"></i>
+                    Seus dados estão seguros e não serão compartilhados
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contato" class="py-24 bg-purple-deep relative overflow-hidden">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl mx-auto">
+                <!-- Header -->
+                <div class="text-center mb-12 fade-in">
+                    <span class="text-magenta-bright font-bold uppercase tracking-wider">Entre em Contato</span>
+                    <h2 class="text-4xl sm:text-5xl font-black mt-4 mb-6">
+                        Vamos Conversar Sobre 
+                        <span class="bg-gradient-to-r from-magenta-bright to-magenta text-transparent bg-clip-text">Seus Objetivos</span>
+                    </h2>
+                </div>
+                
+                <!-- Form -->
+                <form id="contactForm" class="space-y-6 bg-gradient-to-br from-purple-dark to-purple-medium p-8 rounded-2xl shadow-2xl border border-magenta-bright/20">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <label for="nome" class="block text-sm font-semibold mb-2">Nome Completo *</label>
+                            <input type="text" 
+                                   id="nome" 
+                                   name="nome" 
+                                   required
+                                   class="w-full px-4 py-3 bg-purple-deep border border-gray-600 rounded-lg focus:outline-none focus:border-magenta-bright transition-colors text-white">
+                        </div>
+                        
+                        <div>
+                            <label for="telefone" class="block text-sm font-semibold mb-2">Telefone/WhatsApp *</label>
+                            <input type="tel" 
+                                   id="telefone" 
+                                   name="telefone" 
+                                   required
+                                   class="w-full px-4 py-3 bg-purple-deep border border-gray-600 rounded-lg focus:outline-none focus:border-magenta-bright transition-colors text-white">
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <label for="email" class="block text-sm font-semibold mb-2">E-mail *</label>
+                        <input type="email" 
+                               id="email" 
+                               name="email" 
+                               required
+                               class="w-full px-4 py-3 bg-purple-deep border border-gray-600 rounded-lg focus:outline-none focus:border-magenta-bright transition-colors text-white">
+                    </div>
+                    
+                    <div>
+                        <label for="empresa" class="block text-sm font-semibold mb-2">Empresa/Ocupação</label>
+                        <input type="text" 
+                               id="empresa" 
+                               name="empresa"
+                               class="w-full px-4 py-3 bg-purple-deep border border-gray-600 rounded-lg focus:outline-none focus:border-magenta-bright transition-colors text-white">
+                    </div>
+                    
+                    <div>
+                        <label for="mensagem" class="block text-sm font-semibold mb-2">Mensagem *</label>
+                        <textarea id="mensagem" 
+                                  name="mensagem" 
+                                  rows="5" 
+                                  required
+                                  placeholder="Conte-nos sobre seus objetivos e como podemos ajudar..."
+                                  class="w-full px-4 py-3 bg-purple-deep border border-gray-600 rounded-lg focus:outline-none focus:border-magenta-bright transition-colors text-white resize-none"></textarea>
+                    </div>
+                    
+                    <button type="submit" class="w-full btn-primary justify-center text-lg py-4">
+                        <i class="fas fa-paper-plane"></i>
+                        Enviar Mensagem
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                    
+                    <p class="text-sm text-gray-400 text-center">
+                        Ao enviar, você concorda com nossa <a href="#" class="text-magenta-bright hover:underline">Política de Privacidade</a>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-purple-deep border-t border-gray-800 py-12">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+                <!-- Logo and Description -->
+                <div class="space-y-4">
+                    <h3 class="text-2xl font-black">
+                        <span class="text-magenta-bright">#TEAM</span><span class="text-white">JANA</span>
+                    </h3>
+                    <p class="text-gray-400">
+                        Transformando vidas através do movimento, disciplina e excelência.
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Links Rápidos</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#sobre" class="text-gray-400 hover:text-magenta-bright transition-colors">Sobre</a></li>
+                        <li><a href="#servicos" class="text-gray-400 hover:text-magenta-bright transition-colors">Serviços</a></li>
+                        <li><a href="#depoimentos" class="text-gray-400 hover:text-magenta-bright transition-colors">Depoimentos</a></li>
+                        <li><a href="#contato" class="text-gray-400 hover:text-magenta-bright transition-colors">Contato</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Services -->
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Serviços</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#servicos" class="text-gray-400 hover:text-magenta-bright transition-colors">Consultoria Personalizada</a></li>
+                        <li><a href="#servicos" class="text-gray-400 hover:text-magenta-bright transition-colors">Atendimento Online</a></li>
+                        <li><a href="#servicos" class="text-gray-400 hover:text-magenta-bright transition-colors">Pilates</a></li>
+                        <li><a href="#servicos" class="text-gray-400 hover:text-magenta-bright transition-colors">Grupos Especiais</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Contato</h4>
+                    <ul class="space-y-3">
+                        <li class="flex items-start gap-3 text-gray-400">
+                            <i class="fas fa-phone text-magenta-bright mt-1"></i>
+                            <span>(11) 99999-9999</span>
+                        </li>
+                        <li class="flex items-start gap-3 text-gray-400">
+                            <i class="fab fa-whatsapp text-magenta-bright mt-1"></i>
+                            <a href="https://wa.me/5511999999999" class="hover:text-magenta-bright transition-colors">(11) 99999-9999</a>
+                        </li>
+                        <li class="flex items-start gap-3 text-gray-400">
+                            <i class="fas fa-envelope text-magenta-bright mt-1"></i>
+                            <a href="mailto:contato@teamjana.com" class="hover:text-magenta-bright transition-colors">contato@teamjana.com</a>
+                        </li>
+                        <li class="flex items-start gap-3 text-gray-400">
+                            <i class="fas fa-map-marker-alt text-magenta-bright mt-1"></i>
+                            <span>São Paulo, SP</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Bottom Footer -->
+            <div class="border-t border-gray-800 pt-8 mt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center gap-4 text-gray-400 text-sm">
+                    <p>&copy; 2026 Sousa Consultoria. Todos os direitos reservados.</p>
+                    <div class="flex gap-6">
+                        <a href="#" class="hover:text-magenta-bright transition-colors">Política de Privacidade</a>
+                        <a href="#" class="hover:text-magenta-bright transition-colors">Termos de Uso</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/5511999999999?text=Olá!%20Vim%20pelo%20site%20e%20gostaria%20de%20mais%20informações" 
+       target="_blank"
+       class="fixed bottom-6 right-6 bg-gradient-to-br from-magenta-bright to-magenta text-white w-16 h-16 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-all z-50 animate-pulse">
+        <i class="fab fa-whatsapp text-3xl"></i>
+    </a>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" 
+            class="fixed bottom-6 left-6 bg-purple-dark text-magenta-bright w-12 h-12 rounded-full flex items-center justify-center shadow-lg hover:bg-purple-medium transition-all opacity-0 pointer-events-none z-50">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
