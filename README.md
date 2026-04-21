@@ -132,8 +132,8 @@ tailwind.config = {
 ### Alterar Conteúdo
 
 1. **Textos**: Edite diretamente no `index.html`
-2. **Imagens**: Substitua as URLs do Unsplash por suas próprias imagens
-3. **Links WhatsApp**: Procure por `5511999999999` e substitua pelo seu número
+2. **Imagens**: Substitua os arquivos da pasta `assets/` pelas versões finais
+3. **Links WhatsApp**: Procure por `559187630955` e substitua pelo número desejado
 
 ### Integração com Backend
 
@@ -186,9 +186,8 @@ contactForm.addEventListener('submit', async (e) => {
 
 Para personalização ou suporte:
 
-- 📧 Email: contato@teamjana.com
-- 📱 WhatsApp: (11) 99999-9999
-- 🌐 Website: [teamjana.com](https://teamjana.com)
+- 📧 Email: janna180@gmail.com
+- 📱 WhatsApp: +55 91 8763-0955
 
 ## 📄 Licença
 
