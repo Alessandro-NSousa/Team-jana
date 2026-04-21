@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Personal Trainer especializado em consultoria personalizada, atendimento online e presencial. Transforme sua saúde com acompanhamento profissional.">
-    <meta name="keywords" content="personal trainer, consultoria fitness, treinamento personalizado, pilates, grupos especiais">
-    <title>#TeamJana - Personal Trainer e Consultoria Fitness</title>
+    <meta name="description" content="Consultoria fitness com atendimento online, presencial e pilates para quem busca treino com direção, acompanhamento próximo e evolução consistente.">
+    <meta name="keywords" content="consultoria fitness, personal trainer, pilates, atendimento online, treino personalizado">
+    <title>Consultoria Fitness | Online, Presencial e Pilates</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
@@ -14,15 +14,20 @@
             theme: {
                 extend: {
                     colors: {
-                        'purple-deep': '#1a0b2e',
-                        'purple-dark': '#2e1065',
-                        'purple-medium': '#4c1d95',
-                        'magenta': '#ec4899',
-                        'magenta-light': '#f0abfc',
-                        'magenta-bright': '#d946ef'
+                        'charcoal': '#181511',
+                        'charcoal-soft': '#27211d',
+                        'sand': '#f5ede0',
+                        'sand-deep': '#dbcab3',
+                        'coral': '#ff7043',
+                        'coral-soft': '#ffb195',
+                        'olive': '#3f5c49'
                     },
                     fontFamily: {
-                        'sans': ['Inter', 'system-ui', 'sans-serif'],
+                        'sans': ['Manrope', 'system-ui', 'sans-serif'],
+                        'display': ['Bricolage Grotesque', 'Manrope', 'sans-serif']
+                    },
+                    boxShadow: {
+                        'soft-xl': '0 30px 80px rgba(24, 21, 17, 0.18)'
                     }
                 }
             }
@@ -30,699 +35,458 @@
     </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;500;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
-<body class="bg-gray-900 text-white font-sans antialiased">
-    
-    <!-- Hero Section -->
-    <section id="hero" class="relative min-h-screen flex items-center overflow-hidden">
-        <!-- Background gradient -->
-        <div class="absolute inset-0 bg-gradient-to-br from-purple-deep via-purple-dark to-purple-medium"></div>
-        
-        <!-- Animated background circles -->
-        <div class="absolute inset-0 overflow-hidden opacity-20">
-            <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-magenta-bright rounded-full blur-3xl animate-pulse"></div>
-            <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-magenta rounded-full blur-3xl animate-pulse delay-1000"></div>
-        </div>
-        
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div class="grid lg:grid-cols-2 gap-12 items-center">
-                <!-- Text Content -->
-                <div class="text-left space-y-6 fade-in">
-                    <div class="inline-block">
-                        <span class="bg-gradient-to-r from-magenta-bright to-magenta text-transparent bg-clip-text text-sm font-bold uppercase tracking-wider">#TEAMJANA</span>
+<body class="bg-sand pb-24 font-sans text-charcoal antialiased lg:pb-0">
+
+    <section id="hero" class="relative overflow-hidden bg-charcoal text-sand scroll-mt-24">
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(255,112,67,0.28),transparent_30%),radial-gradient(circle_at_right,_rgba(255,177,149,0.16),transparent_28%)]"></div>
+        <div class="absolute inset-0 opacity-20 bg-[linear-gradient(rgba(255,255,255,0.05)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.05)_1px,transparent_1px)] bg-[size:28px_28px]"></div>
+
+        <div class="container relative z-10 mx-auto px-4 pb-20 pt-6 sm:px-6 sm:pb-24 lg:px-8 lg:pt-10">
+            <div class="mb-8 flex items-center justify-between gap-4">
+                <div>
+                    <p class="text-xs font-semibold uppercase tracking-[0.24em] text-coral-soft">Consultoria Fitness</p>
+                    <p class="mt-2 text-sm text-sand/70">Atendimento individual com orientação clara para quem quer treinar com mais constância e segurança.</p>
+                </div>
+                <a href="#contato" class="hidden rounded-full border border-white/15 bg-white/5 px-5 py-3 text-sm font-semibold text-sand transition hover:border-coral hover:text-coral lg:inline-flex lg:items-center lg:gap-2">
+                    Preencher formulário
+                    <i class="fas fa-arrow-right text-xs"></i>
+                </a>
+            </div>
+
+            <div class="grid gap-12 lg:grid-cols-[minmax(0,1.08fr)_minmax(0,0.92fr)] lg:items-center">
+                <div class="space-y-6 fade-in">
+                    <div class="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-[0.7rem] font-semibold uppercase tracking-[0.24em] text-coral-soft">
+                        <i class="fas fa-mobile-screen-button"></i>
+                        Atendimento personalizado
                     </div>
-                    
-                    <h1 class="text-5xl sm:text-6xl lg:text-7xl font-black leading-tight">
-                        Transforme Seu 
-                        <span class="bg-gradient-to-r from-magenta-bright via-magenta to-magenta-light text-transparent bg-clip-text">Corpo e Mente</span>
+
+                    <h1 class="font-display text-4xl leading-[0.96] sm:max-w-2xl sm:text-6xl lg:text-7xl">
+                        Sua rotina merece um plano de treino que cabe na vida real.
                     </h1>
-                    
-                    <p class="text-xl sm:text-2xl text-gray-300 leading-relaxed">
-                        Consultoria fitness personalizada com resultados comprovados. 
-                        Atendimento online, presencial e pilates para todos os níveis.
+
+                    <p class="max-w-xl text-base leading-relaxed text-sand/78 sm:text-lg lg:text-xl">
+                        Consultoria, personal e pilates com acompanhamento próximo para quem quer sair do improviso, organizar a rotina e treinar com direção.
                     </p>
-                    
-                    <!-- Authority indicators -->
-                    <div class="flex flex-wrap gap-6 py-4">
-                        <div class="flex items-center gap-2">
-                            <i class="fas fa-award text-magenta-bright text-2xl"></i>
-                            <div>
-                                <p class="font-bold text-lg">+10 Anos</p>
-                                <p class="text-sm text-gray-400">de Experiência</p>
-                            </div>
-                        </div>
-                        <div class="flex items-center gap-2">
-                            <i class="fas fa-users text-magenta-bright text-2xl"></i>
-                            <div>
-                                <p class="font-bold text-lg">+500 Clientes</p>
-                                <p class="text-sm text-gray-400">Atendidos</p>
-                            </div>
-                        </div>
-                        <div class="flex items-center gap-2">
-                            <i class="fas fa-star text-magenta-bright text-2xl"></i>
-                            <div>
-                                <p class="font-bold text-lg">4.9/5</p>
-                                <p class="text-sm text-gray-400">Avaliação</p>
-                            </div>
-                        </div>
+
+                    <div class="flex flex-wrap gap-3 text-sm text-sand/72">
+                        <span class="rounded-full border border-white/10 bg-white/5 px-4 py-2">Consultoria online</span>
+                        <span class="rounded-full border border-white/10 bg-white/5 px-4 py-2">Personal presencial</span>
+                        <span class="rounded-full border border-white/10 bg-white/5 px-4 py-2">Pilates individual e em grupo</span>
                     </div>
-                    
-                    <!-- CTAs -->
-                    <div class="flex flex-col sm:flex-row gap-4 pt-4">
-                        <a href="#contato" class="btn-primary group">
-                            <i class="fab fa-whatsapp text-xl"></i>
-                            Falar com Especialista
-                            <i class="fas fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
+
+                    <div class="grid gap-3 sm:grid-cols-3">
+                        <article class="rounded-[1.5rem] border border-white/10 bg-white/5 p-4 backdrop-blur-sm">
+                            <p class="text-xs font-semibold uppercase tracking-[0.2em] text-coral-soft">Direção</p>
+                            <p class="mt-2 text-sm text-sand/78">Você entende o que faz sentido para o seu objetivo antes de começar.</p>
+                        </article>
+                        <article class="rounded-[1.5rem] border border-white/10 bg-white/5 p-4 backdrop-blur-sm">
+                            <p class="text-xs font-semibold uppercase tracking-[0.2em] text-coral-soft">Rotina</p>
+                            <p class="mt-2 text-sm text-sand/78">Plano ajustado para agenda corrida, nível atual e limitações reais.</p>
+                        </article>
+                        <article class="rounded-[1.5rem] border border-white/10 bg-white/5 p-4 backdrop-blur-sm">
+                            <p class="text-xs font-semibold uppercase tracking-[0.2em] text-coral-soft">Acompanhamento</p>
+                            <p class="mt-2 text-sm text-sand/78">Você recebe retorno, ajuste e próximos passos com mais consistência.</p>
+                        </article>
+                    </div>
+
+                    <div class="flex flex-col gap-3 pt-2 sm:flex-row">
+                        <a href="#contato" class="inline-flex items-center justify-center gap-3 rounded-full bg-coral px-6 py-4 text-base font-extrabold text-charcoal transition hover:-translate-y-0.5 hover:bg-coral-soft">
+                            <i class="fas fa-clipboard-list"></i>
+                            Quero minha avaliação
                         </a>
-                        <a href="#servicos" class="btn-secondary">
-                            Saiba Mais
-                            <i class="fas fa-chevron-down"></i>
+                        <a href="#servicos" class="inline-flex items-center justify-center gap-3 rounded-full border border-white/15 bg-white/5 px-6 py-4 text-base font-bold text-sand transition hover:border-coral hover:text-coral">
+                            Ver formatos de atendimento
+                            <i class="fas fa-arrow-down"></i>
                         </a>
+                    </div>
+
+                    <div class="flex flex-wrap items-center gap-x-6 gap-y-2 text-sm text-sand/65">
+                        <span class="inline-flex items-center gap-2"><i class="fas fa-circle-check text-coral"></i> Avaliação alinhada ao seu objetivo</span>
+                        <span class="inline-flex items-center gap-2"><i class="fas fa-circle-check text-coral"></i> Retorno com orientação inicial</span>
                     </div>
                 </div>
+
+                <div class="relative fade-in delay-200">
+                    
+                    <!-- <div class="relative z-10 mb-4 flex items-center justify-between text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-sand/50">
+                        <span>Atendimento individual</span>
+                        <span>Online e presencial</span>
+                    </div> -->
+                    <img src="assets/janaina-hero.png"
+                            alt="Profissional da consultoria fitness"
+                            class="blended-portrait__image blended-portrait__image--hero mx-auto h-[360px] w-full object-contain object-bottom sm:h-[470px] lg:h-[620px]">
                 
-                <!-- Image/Media Column -->
-                <div class="relative fade-in delay-300">
-                    <div class="relative z-10">
-                        <img src="assets/janaina-hero.png"
-                             alt="Personal Training"
-                             class="object-cover h-[650px]"
-                             style="object-position: center 20%;">
-                    </div>
                 </div>
             </div>
         </div>
-        
-        <!-- Scroll indicator -->
-        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-            <i class="fas fa-chevron-down text-magenta-bright text-2xl"></i>
+    </section>
+
+    <section class="relative z-10 -mt-10 pb-8 sm:-mt-12 sm:pb-12">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
+                <article class="rounded-[1.75rem] bg-white p-5 shadow-soft-xl ring-1 ring-black/5">
+                    <div class="flex h-11 w-11 items-center justify-center rounded-2xl bg-coral/10 text-coral">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h2 class="mt-4 text-lg font-extrabold">Avaliação com foco no seu momento</h2>
+                    <p class="mt-2 text-sm leading-relaxed text-charcoal/70">O atendimento começa entendendo objetivo, rotina e limitações antes de qualquer indicação.</p>
+                </article>
+
+                <article class="rounded-[1.75rem] bg-white p-5 shadow-soft-xl ring-1 ring-black/5">
+                    <div class="flex h-11 w-11 items-center justify-center rounded-2xl bg-coral/10 text-coral">
+                        <i class="fas fa-calendar-check"></i>
+                    </div>
+                    <h2 class="mt-4 text-lg font-extrabold">Treino pensado para a sua rotina</h2>
+                    <p class="mt-2 text-sm leading-relaxed text-charcoal/70">A proposta respeita agenda, nível atual e preferências para aumentar a consistência.</p>
+                </article>
+
+                <article class="rounded-[1.75rem] bg-white p-5 shadow-soft-xl ring-1 ring-black/5">
+                    <div class="flex h-11 w-11 items-center justify-center rounded-2xl bg-coral/10 text-coral">
+                        <i class="fas fa-layer-group"></i>
+                    </div>
+                    <h2 class="mt-4 text-lg font-extrabold">Formatos para necessidades diferentes</h2>
+                    <p class="mt-2 text-sm leading-relaxed text-charcoal/70">Consultoria, personal e pilates entram de forma estratégica conforme o que faz sentido para você.</p>
+                </article>
+
+                <article class="rounded-[1.75rem] bg-white p-5 shadow-soft-xl ring-1 ring-black/5">
+                    <div class="flex h-11 w-11 items-center justify-center rounded-2xl bg-coral/10 text-coral">
+                        <i class="fas fa-comment-dots"></i>
+                    </div>
+                    <h2 class="mt-4 text-lg font-extrabold">Contato próximo e humanizado</h2>
+                    <p class="mt-2 text-sm leading-relaxed text-charcoal/70">Você recebe retorno com direcionamento inicial e pode seguir a conversa pelo canal mais prático.</p>
+                </article>
+            </div>
         </div>
     </section>
 
-    <!-- Authority Section -->
-    <section id="sobre" class="py-24 bg-gradient-to-b from-purple-medium to-purple-dark relative overflow-hidden">
+    <section id="servicos" class="scroll-mt-24 py-16 sm:py-24">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid lg:grid-cols-2 gap-12 items-center">
-                <!-- Photo -->
-                <div class="order-2 lg:order-1 fade-in-left">
-                    <div class="relative">
+            <div class="max-w-2xl fade-in">
+                <p class="text-sm font-semibold uppercase tracking-[0.28em] text-coral">Formatos de atendimento</p>
+                <h2 class="mt-4 font-display text-3xl leading-tight sm:text-5xl">Escolha o formato que encaixa na sua rotina, no seu nível e no seu objetivo.</h2>
+                <p class="mt-4 text-base leading-relaxed text-charcoal/72 sm:text-lg">Cada formato atende uma necessidade diferente, com o mesmo cuidado na orientação, nos ajustes e na continuidade.</p>
+            </div>
+
+            <div class="mt-10 grid gap-5 lg:grid-cols-2 xl:grid-cols-4">
+                <article class="rounded-[1.75rem] bg-white p-6 shadow-soft-xl ring-1 ring-black/5">
+                    <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-coral/10 text-coral">
+                        <i class="fas fa-mobile-alt text-lg"></i>
+                    </div>
+                    <h3 class="mt-5 text-xl font-extrabold">Consultoria Online</h3>
+                    <p class="mt-3 text-sm leading-relaxed text-charcoal/70">Treino com acompanhamento remoto, ajustes frequentes e organização para quem precisa de flexibilidade.</p>
+                    <div class="mt-5 flex flex-wrap gap-2 text-xs font-semibold uppercase tracking-[0.18em] text-charcoal/55">
+                        <span class="rounded-full bg-sand px-3 py-2">Flexível</span>
+                        <span class="rounded-full bg-sand px-3 py-2">Acompanhamento</span>
+                        <span class="rounded-full bg-sand px-3 py-2">Rotina corrida</span>
+                    </div>
+                </article>
+
+                <article class="rounded-[1.75rem] bg-white p-6 shadow-soft-xl ring-1 ring-black/5">
+                    <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-coral/10 text-coral">
+                        <i class="fas fa-dumbbell text-lg"></i>
+                    </div>
+                    <h3 class="mt-5 text-xl font-extrabold">Personal Presencial</h3>
+                    <p class="mt-3 text-sm leading-relaxed text-charcoal/70">Sessões com correção ao vivo, progressão técnica e presença ativa para quem quer mais direção no treino.</p>
+                    <div class="mt-5 flex flex-wrap gap-2 text-xs font-semibold uppercase tracking-[0.18em] text-charcoal/55">
+                        <span class="rounded-full bg-sand px-3 py-2">Correção</span>
+                        <span class="rounded-full bg-sand px-3 py-2">Presença</span>
+                        <span class="rounded-full bg-sand px-3 py-2">Performance</span>
+                    </div>
+                </article>
+
+                <article class="rounded-[1.75rem] bg-white p-6 shadow-soft-xl ring-1 ring-black/5">
+                    <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-coral/10 text-coral">
+                        <i class="fas fa-spa text-lg"></i>
+                    </div>
+                    <h3 class="mt-5 text-xl font-extrabold">Pilates Individual</h3>
+                    <p class="mt-3 text-sm leading-relaxed text-charcoal/70">Atendimento voltado para mobilidade, postura, consciência corporal e evolução com mais precisão.</p>
+                    <div class="mt-5 flex flex-wrap gap-2 text-xs font-semibold uppercase tracking-[0.18em] text-charcoal/55">
+                        <span class="rounded-full bg-sand px-3 py-2">Postura</span>
+                        <span class="rounded-full bg-sand px-3 py-2">Mobilidade</span>
+                        <span class="rounded-full bg-sand px-3 py-2">Consciência</span>
+                    </div>
+                </article>
+
+                <article class="rounded-[1.75rem] bg-white p-6 shadow-soft-xl ring-1 ring-black/5">
+                    <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-coral/10 text-coral">
+                        <i class="fas fa-users text-lg"></i>
+                    </div>
+                    <h3 class="mt-5 text-xl font-extrabold">Grupos Especiais</h3>
+                    <p class="mt-3 text-sm leading-relaxed text-charcoal/70">Uma opção para quem valoriza ambiente guiado, energia coletiva e adaptação segura a diferentes perfis.</p>
+                    <div class="mt-5 flex flex-wrap gap-2 text-xs font-semibold uppercase tracking-[0.18em] text-charcoal/55">
+                        <span class="rounded-full bg-sand px-3 py-2">Grupo</span>
+                        <span class="rounded-full bg-sand px-3 py-2">Energia</span>
+                        <span class="rounded-full bg-sand px-3 py-2">Adaptação</span>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre" class="scroll-mt-24 bg-charcoal py-16 text-sand sm:py-24">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid gap-10 lg:grid-cols-[minmax(280px,0.9fr)_minmax(0,1.1fr)] lg:items-center">
+                <div class="order-2 lg:order-1 fade-in">
+                    <div class="blended-portrait blended-portrait--about mx-auto w-full max-w-[360px] lg:max-w-none">
                         <img src="assets/janaina-sobre.png"
-                             alt="Jana - Personal Trainer"
-                             class="relative rounded-2xl shadow-2xl w-full h-[500px] object-contain bg-purple-dark">
+                             alt="Profissional apresentando a consultoria"
+                                class="blended-portrait__image blended-portrait__image--about mx-auto h-[420px] w-full object-contain object-bottom sm:h-[520px]">
                     </div>
                 </div>
-                
-                <!-- Content -->
-                <div class="order-1 lg:order-2 space-y-6 fade-in-right">
-                    <span class="text-magenta-bright font-bold uppercase tracking-wider">Quem Somos</span>
-                    <h2 class="text-4xl sm:text-5xl font-black leading-tight">
-                        Autoridade em 
-                        <span class="bg-gradient-to-r from-magenta-bright to-magenta text-transparent bg-clip-text">Transformação Fitness</span>
-                    </h2>
-                    
-                    <p class="text-lg text-gray-300 leading-relaxed">
-                        Com mais de uma década de experiência, a #TEAMJANA se consolidou como referência em consultoria fitness personalizada. Nossa metodologia exclusiva combina ciência do movimento, nutrição estratégica e suporte psicológico para resultados duradouros.
-                    </p>
-                    
-                    <p class="text-lg text-gray-300 leading-relaxed">
-                        Especializados no atendimento de personal trainers, empresários e profissionais que buscam excelência física e mental para potencializar seus resultados pessoais e profissionais.
-                    </p>
-                    
-                    <div class="pt-4">
-                        <a href="#contato" class="btn-secondary inline-flex items-center gap-2">
-                            Agende uma Avaliação Gratuita
-                            <i class="fas fa-calendar-check"></i>
-                        </a>
+
+                <div class="order-1 space-y-6 lg:order-2 fade-in delay-200">
+                    <p class="text-sm font-semibold uppercase tracking-[0.28em] text-coral-soft">Como o atendimento funciona</p>
+                    <h2 class="font-display text-3xl leading-tight sm:text-5xl">Menos promessa vaga. Mais diagnóstico, ajuste e acompanhamento de verdade.</h2>
+                    <p class="max-w-2xl text-base leading-relaxed text-sand/76 sm:text-lg">A proposta da consultoria é entender o seu momento, escolher o formato mais coerente e construir um caminho que dê continuidade. Isso importa mais do que um plano bonito que você abandona em duas semanas.</p>
+
+                    <div class="grid gap-4 sm:grid-cols-2">
+                        <article class="rounded-[1.5rem] border border-white/10 bg-white/5 p-5">
+                            <p class="text-sm font-bold text-coral-soft">Diagnóstico inicial</p>
+                            <p class="mt-2 text-sm leading-relaxed text-sand/74">Objetivo, rotina, limitações e disponibilidade entram antes da indicação do formato.</p>
+                        </article>
+                        <article class="rounded-[1.5rem] border border-white/10 bg-white/5 p-5">
+                            <p class="text-sm font-bold text-coral-soft">Plano compatível com a agenda</p>
+                            <p class="mt-2 text-sm leading-relaxed text-sand/74">A construção do treino considera sua vida real, não uma rotina idealizada.</p>
+                        </article>
+                        <article class="rounded-[1.5rem] border border-white/10 bg-white/5 p-5">
+                            <p class="text-sm font-bold text-coral-soft">Ajustes frequentes</p>
+                            <p class="mt-2 text-sm leading-relaxed text-sand/74">O acompanhamento serve para recalibrar, manter consistência e evitar estagnação.</p>
+                        </article>
+                        <article class="rounded-[1.5rem] border border-white/10 bg-white/5 p-5">
+                            <p class="text-sm font-bold text-coral-soft">Foco em continuidade</p>
+                            <p class="mt-2 text-sm leading-relaxed text-sand/74">A meta é construir evolução sustentável em vez de depender de picos de motivação.</p>
+                        </article>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Services Section -->
-    <section id="servicos" class="py-24 bg-purple-deep relative overflow-hidden">
+    <section id="diferenciais" class="scroll-mt-24 py-16 sm:py-24">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <!-- Header -->
-            <div class="text-center max-w-3xl mx-auto mb-16 fade-in">
-                <span class="text-magenta-bright font-bold uppercase tracking-wider">Nossos Serviços</span>
-                <h2 class="text-4xl sm:text-5xl font-black mt-4 mb-6">
-                    Soluções Completas Para 
-                    <span class="bg-gradient-to-r from-magenta-bright to-magenta text-transparent bg-clip-text">Sua Evolução</span>
-                </h2>
-                <p class="text-xl text-gray-300">
-                    Programas personalizados desenvolvidos especificamente para suas necessidades e objetivos
-                </p>
-            </div>
-            
-            <!-- Services Grid -->
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Service Card 1 -->
-                <div class="service-card group">
-                    <div class="text-center space-y-4">
-                        <div class="icon-container">
-                            <i class="fas fa-user-tie text-4xl"></i>
-                        </div>
-                        <h3 class="text-2xl font-bold">Consultoria Personalizada</h3>
-                        <p class="text-gray-400">
-                            Acompanhamento individual com plano estratégico de treino, nutrição e mindset para resultados exponenciais.
-                        </p>
-                        <a href="#contato" class="inline-flex items-center gap-2 text-magenta-bright hover:text-magenta transition-colors font-semibold">
-                            Saiba Mais <i class="fas fa-arrow-right"></i>
-                        </a>
+            <div class="grid gap-10 lg:grid-cols-[minmax(0,0.95fr)_minmax(0,1.05fr)] lg:items-start">
+                <div class="space-y-5 fade-in">
+                    <p class="text-sm font-semibold uppercase tracking-[0.28em] text-coral">Diferenciais do atendimento</p>
+                    <h2 class="font-display text-3xl leading-tight sm:text-5xl">Um acompanhamento que combina estratégia, presença e continuidade.</h2>
+                    <p class="text-base leading-relaxed text-charcoal/72 sm:text-lg">A proposta é acompanhar seu processo com direcionamento real, ajustes frequentes e atenção ao que funciona na sua rotina.</p>
+                    <div class="rounded-[1.75rem] bg-white p-6 shadow-soft-xl ring-1 ring-black/5">
+                        <p class="text-xs font-semibold uppercase tracking-[0.2em] text-coral">O que sustenta a evolução</p>
+                        <ul class="mt-4 space-y-3 text-sm leading-relaxed text-charcoal/72">
+                            <li class="flex items-start gap-3"><i class="fas fa-check mt-1 text-coral"></i><span>Diagnóstico inicial para entender seu objetivo e o cenário atual.</span></li>
+                            <li class="flex items-start gap-3"><i class="fas fa-check mt-1 text-coral"></i><span>Planejamento individual para encaixar treino e rotina sem excesso.</span></li>
+                            <li class="flex items-start gap-3"><i class="fas fa-check mt-1 text-coral"></i><span>Ajustes frequentes para manter constância, técnica e progressão.</span></li>
+                        </ul>
                     </div>
                 </div>
-                
-                <!-- Service Card 2 -->
-                <div class="service-card group">
-                    <div class="text-center space-y-4">
-                        <div class="icon-container">
-                            <i class="fas fa-laptop text-4xl"></i>
-                        </div>
-                        <h3 class="text-2xl font-bold">Atendimento Online</h3>
-                        <p class="text-gray-400">
-                            Treinamento remoto com acompanhamento diário via app. Flexibilidade para treinar onde e quando quiser.
-                        </p>
-                        <a href="#contato" class="inline-flex items-center gap-2 text-magenta-bright hover:text-magenta transition-colors font-semibold">
-                            Saiba Mais <i class="fas fa-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
-                
-                <!-- Service Card 3 -->
-                <div class="service-card group">
-                    <div class="text-center space-y-4">
-                        <div class="icon-container">
-                            <i class="fas fa-dumbbell text-4xl"></i>
-                        </div>
-                        <h3 class="text-2xl font-bold">Plano de Treino Personalizado</h3>
-                        <p class="text-gray-400">
-                            Programas de treino sob medida com ajustes progressivos baseados em seus resultados e feedback.
-                        </p>
-                        <a href="#contato" class="inline-flex items-center gap-2 text-magenta-bright hover:text-magenta transition-colors font-semibold">
-                            Saiba Mais <i class="fas fa-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
-                
-                <!-- Service Card 4 -->
-                <div class="service-card group">
-                    <div class="text-center space-y-4">
-                        <div class="icon-container">
-                            <i class="fas fa-spa text-4xl"></i>
-                        </div>
-                        <h3 class="text-2xl font-bold">Pilates Individual</h3>
-                        <p class="text-gray-400">
-                            Sessões de pilates personalizadas em domicílio ou academia, focadas em força, flexibilidade e postura.
-                        </p>
-                        <a href="#contato" class="inline-flex items-center gap-2 text-magenta-bright hover:text-magenta transition-colors font-semibold">
-                            Saiba Mais <i class="fas fa-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
-                
-                <!-- Service Card 5 -->
-                <div class="service-card group">
-                    <div class="text-center space-y-4">
-                        <div class="icon-container">
-                            <i class="fas fa-users text-4xl"></i>
-                        </div>
-                        <h3 class="text-2xl font-bold">Pilates em Grupo</h3>
-                        <p class="text-gray-400">
-                            Aulas em grupo com até 6 pessoas. Ambiente motivador e custo acessível sem perder qualidade.
-                        </p>
-                        <a href="#contato" class="inline-flex items-center gap-2 text-magenta-bright hover:text-magenta transition-colors font-semibold">
-                            Saiba Mais <i class="fas fa-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
-                
-                <!-- Service Card 6 -->
-                <div class="service-card group">
-                    <div class="text-center space-y-4">
-                        <div class="icon-container">
-                            <i class="fas fa-heart text-4xl"></i>
-                        </div>
-                        <h3 class="text-2xl font-bold">Grupos Especiais</h3>
-                        <p class="text-gray-400">
-                            Atendimento especializado para idosos, gestantes e pessoas com necessidades específicas de mobilidade.
-                        </p>
-                        <a href="#contato" class="inline-flex items-center gap-2 text-magenta-bright hover:text-magenta transition-colors font-semibold">
-                            Saiba Mais <i class="fas fa-arrow-right"></i>
-                        </a>
-                    </div>
+
+                <div class="grid gap-4 fade-in delay-200 sm:grid-cols-3">
+                    <article class="rounded-[1.75rem] bg-white p-6 shadow-soft-xl ring-1 ring-black/5">
+                        <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-coral/14 text-coral text-lg"><i class="fas fa-handshake"></i></div>
+                        <h3 class="mt-5 text-lg font-extrabold">Acompanhamento próximo</h3>
+                        <p class="mt-3 text-sm leading-relaxed text-charcoal/70">Você não recebe um plano solto: recebe retorno, leitura de contexto e ajustes ao longo do processo.</p>
+                    </article>
+                    <article class="rounded-[1.75rem] bg-white p-6 shadow-soft-xl ring-1 ring-black/5">
+                        <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-coral/14 text-coral text-lg"><i class="fas fa-sliders"></i></div>
+                        <h3 class="mt-5 text-lg font-extrabold">Planejamento individual</h3>
+                        <p class="mt-3 text-sm leading-relaxed text-charcoal/70">O treino é organizado de acordo com sua meta, disponibilidade e limitações reais.</p>
+                    </article>
+                    <article class="rounded-[1.75rem] bg-white p-6 shadow-soft-xl ring-1 ring-black/5">
+                        <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-coral/14 text-coral text-lg"><i class="fas fa-chart-line"></i></div>
+                        <h3 class="mt-5 text-lg font-extrabold">Evolução consistente</h3>
+                        <p class="mt-3 text-sm leading-relaxed text-charcoal/70">A meta é criar continuidade, melhorar execução e fazer você avançar com mais segurança.</p>
+                    </article>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Differentials Section -->
-    <section id="diferenciais" class="py-24 bg-gradient-to-b from-purple-dark to-purple-medium relative overflow-hidden">
+    <section id="resultados" class="scroll-mt-24 bg-[#fffaf3] py-16 sm:py-24">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <!-- Header -->
-            <div class="text-center max-w-3xl mx-auto mb-16 fade-in">
-                <span class="text-magenta-bright font-bold uppercase tracking-wider">Por Que Escolher a #TeamJana</span>
-                <h2 class="text-4xl sm:text-5xl font-black mt-4 mb-6">
-                    Diferenciais que 
-                    <span class="bg-gradient-to-r from-magenta-bright to-magenta text-transparent bg-clip-text">Transformam</span>
-                </h2>
+            <div class="max-w-2xl fade-in">
+                <p class="text-sm font-semibold uppercase tracking-[0.28em] text-coral">Objetivos mais comuns</p>
+                <h2 class="mt-4 font-display text-3xl leading-tight sm:text-5xl">O atendimento muda conforme o resultado que você quer perseguir.</h2>
+                <p class="mt-4 text-base leading-relaxed text-charcoal/72 sm:text-lg">Cada objetivo pede uma condução diferente, com ajustes no treino, na intensidade e na estratégia ao longo do caminho.</p>
             </div>
-            
-            <!-- Differentials Grid -->
-            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <div class="differential-card fade-in">
-                    <i class="fas fa-bullseye text-5xl text-magenta-bright mb-4"></i>
-                    <h3 class="text-xl font-bold mb-3">Atendimento Personalizado</h3>
-                    <p class="text-gray-400">
-                        Cada cliente tem um plano único, desenvolvido especificamente para seus objetivos e biotipo.
-                    </p>
-                </div>
-                
-                <div class="differential-card fade-in delay-100">
-                    <i class="fas fa-chart-line text-5xl text-magenta-bright mb-4"></i>
-                    <h3 class="text-xl font-bold mb-3">Metodologia Validada</h3>
-                    <p class="text-gray-400">
-                        Sistema comprovado baseado em ciência do esporte e mais de 10 anos de refinamento prático.
-                    </p>
-                </div>
-                
-                <div class="differential-card fade-in delay-200">
-                    <i class="fas fa-trophy text-5xl text-magenta-bright mb-4"></i>
-                    <h3 class="text-xl font-bold mb-3">Resultados Mensuráveis</h3>
-                    <p class="text-gray-400">
-                        Acompanhamento por métricas objetivas com avaliações periódicas e ajustes precisos.
-                    </p>
-                </div>
-                
-                <div class="differential-card fade-in delay-300">
-                    <i class="fas fa-seedling text-5xl text-magenta-bright mb-4"></i>
-                    <h3 class="text-xl font-bold mb-3">Crescimento Sustentável</h3>
-                    <p class="text-gray-400">
-                        Foco em hábitos duradouros e evolução constante, não em soluções milagrosas temporárias.
-                    </p>
-                </div>
+
+            <div class="mt-10 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
+                <article class="rounded-[1.75rem] border border-black/5 bg-white p-6 shadow-soft-xl">
+                    <p class="text-xs font-semibold uppercase tracking-[0.2em] text-coral">Emagrecimento com direção</p>
+                    <h3 class="mt-4 text-xl font-extrabold">Para quem quer constância sem depender de tentativa e erro.</h3>
+                    <p class="mt-3 text-sm leading-relaxed text-charcoal/70">A combinação entre treino ajustado, rotina organizada e acompanhamento reduz a sensação de começar sempre do zero.</p>
+                </article>
+
+                <article class="rounded-[1.75rem] border border-black/5 bg-white p-6 shadow-soft-xl">
+                    <p class="text-xs font-semibold uppercase tracking-[0.2em] text-coral">Postura, mobilidade e consciência corporal</p>
+                    <h3 class="mt-4 text-xl font-extrabold">Para quem precisa de corpo mais funcional no trabalho e no dia a dia.</h3>
+                    <p class="mt-3 text-sm leading-relaxed text-charcoal/70">Pilates e treino orientado entram como ferramenta para reduzir dor, rigidez e falta de controle nos movimentos.</p>
+                </article>
+
+                <article class="rounded-[1.75rem] border border-black/5 bg-white p-6 shadow-soft-xl">
+                    <p class="text-xs font-semibold uppercase tracking-[0.2em] text-coral">Força e desempenho com mais clareza</p>
+                    <h3 class="mt-4 text-xl font-extrabold">Para quem treina, mas sente que falta direção no próximo passo.</h3>
+                    <p class="mt-3 text-sm leading-relaxed text-charcoal/70">O foco passa a ser progressão, execução e continuidade, sem excesso de aleatoriedade no plano.</p>
+                </article>
             </div>
         </div>
     </section>
 
-    <!-- Results/Metrics Section -->
-    <section class="py-24 bg-purple-deep relative overflow-hidden">
-        <!-- Animated background -->
-        <div class="absolute inset-0 opacity-10">
-            <div class="absolute top-0 left-1/4 w-64 h-64 bg-magenta-bright rounded-full blur-3xl"></div>
-            <div class="absolute bottom-0 right-1/4 w-64 h-64 bg-magenta rounded-full blur-3xl"></div>
-        </div>
-        
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div class="text-center mb-16 fade-in">
-                <h2 class="text-4xl sm:text-5xl font-black mb-6">
-                    Números que 
-                    <span class="bg-gradient-to-r from-magenta-bright to-magenta text-transparent bg-clip-text">Impressionam</span>
-                </h2>
-            </div>
-            
-            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <div class="text-center space-y-3 fade-in">
-                    <p class="text-6xl font-black text-magenta-bright counter" data-target="500">0</p>
-                    <p class="text-xl text-gray-300">Clientes Atendidos</p>
-                </div>
-                
-                <div class="text-center space-y-3 fade-in delay-100">
-                    <p class="text-6xl font-black text-magenta-bright">
-                        <span class="counter" data-target="85">0</span>%
-                    </p>
-                    <p class="text-xl text-gray-300">Crescimento Médio</p>
-                </div>
-                
-                <div class="text-center space-y-3 fade-in delay-200">
-                    <p class="text-6xl font-black text-magenta-bright counter" data-target="10">0</p>
-                    <p class="text-xl text-gray-300">Anos de Mercado</p>
-                </div>
-                
-                <div class="text-center space-y-3 fade-in delay-300">
-                    <p class="text-6xl font-black text-magenta-bright">
-                        <span class="counter" data-target="95">0</span>%
-                    </p>
-                    <p class="text-xl text-gray-300">Taxa de Satisfação</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonials Section -->
-    <section id="depoimentos" class="py-24 bg-gradient-to-b from-purple-medium to-purple-dark relative overflow-hidden">
+    <section id="contato" class="scroll-mt-24 py-16 sm:py-24">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <!-- Header -->
-            <div class="text-center max-w-3xl mx-auto mb-16 fade-in">
-                <span class="text-magenta-bright font-bold uppercase tracking-wider">Depoimentos</span>
-                <h2 class="text-4xl sm:text-5xl font-black mt-4 mb-6">
-                    O Que Nossos Clientes 
-                    <span class="bg-gradient-to-r from-magenta-bright to-magenta text-transparent bg-clip-text">Dizem</span>
-                </h2>
-            </div>
-            
-            <!-- Testimonials Grid -->
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Testimonial 1 -->
-                <div class="testimonial-card fade-in">
-                    <div class="flex mb-4">
-                        <i class="fas fa-star text-magenta-bright"></i>
-                        <i class="fas fa-star text-magenta-bright"></i>
-                        <i class="fas fa-star text-magenta-bright"></i>
-                        <i class="fas fa-star text-magenta-bright"></i>
-                        <i class="fas fa-star text-magenta-bright"></i>
-                    </div>
-                    <p class="text-gray-300 mb-6 italic">
-                        "A metodologia da Jana transformou não só meu corpo, mas minha mentalidade. Em 6 meses perdi 15kg e ganhei uma disciplina que aplicho em todos os aspectos da minha vida."
-                    </p>
-                    <div class="flex items-center gap-4">
-                        <img src="https://i.pravatar.cc/150?img=12" alt="Cliente" class="w-12 h-12 rounded-full">
-                        <div>
-                            <p class="font-bold">Carlos Silva</p>
-                            <p class="text-sm text-gray-400">CEO, TechStart</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Testimonial 2 -->
-                <div class="testimonial-card fade-in delay-100">
-                    <div class="flex mb-4">
-                        <i class="fas fa-star text-magenta-bright"></i>
-                        <i class="fas fa-star text-magenta-bright"></i>
-                        <i class="fas fa-star text-magenta-bright"></i>
-                        <i class="fas fa-star text-magenta-bright"></i>
-                        <i class="fas fa-star text-magenta-bright"></i>
-                    </div>
-                    <p class="text-gray-300 mb-6 italic">
-                        "Como empresária, meu tempo é escasso. O atendimento online me permitiu manter consistência e os resultados superaram minhas expectativas. Recomendo!"
-                    </p>
-                    <div class="flex items-center gap-4">
-                        <img src="https://i.pravatar.cc/150?img=47" alt="Cliente" class="w-12 h-12 rounded-full">
-                        <div>
-                            <p class="font-bold">Mariana Costa</p>
-                            <p class="text-sm text-gray-400">Empresária</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Testimonial 3 -->
-                <div class="testimonial-card fade-in delay-200">
-                    <div class="flex mb-4">
-                        <i class="fas fa-star text-magenta-bright"></i>
-                        <i class="fas fa-star text-magenta-bright"></i>
-                        <i class="fas fa-star text-magenta-bright"></i>
-                        <i class="fas fa-star text-magenta-bright"></i>
-                        <i class="fas fa-star text-magenta-bright"></i>
-                    </div>
-                    <p class="text-gray-300 mb-6 italic">
-                        "O pilates em grupo é incrível! Além dos benefícios físicos, criei amizades e encontrei uma motivação extra para manter a rotina de exercícios."
-                    </p>
-                    <div class="flex items-center gap-4">
-                        <img src="https://i.pravatar.cc/150?img=32" alt="Cliente" class="w-12 h-12 rounded-full">
-                        <div>
-                            <p class="font-bold">Ana Paula Rodrigues</p>
-                            <p class="text-sm text-gray-400">Gestora</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Testimonial 4 -->
-                <div class="testimonial-card fade-in delay-300">
-                    <div class="flex mb-4">
-                        <i class="fas fa-star text-magenta-bright"></i>
-                        <i class="fas fa-star text-magenta-bright"></i>
-                        <i class="fas fa-star text-magenta-bright"></i>
-                        <i class="fas fa-star text-magenta-bright"></i>
-                        <i class="fas fa-star text-magenta-bright"></i>
-                    </div>
-                    <p class="text-gray-300 mb-6 italic">
-                        "Profissionalismo e atenção aos detalhes fazem toda diferença. A Jana entende minhas limitações e sempre ajusta os treinos para garantir progresso seguro."
-                    </p>
-                    <div class="flex items-center gap-4">
-                        <img src="https://i.pravatar.cc/150?img=68" alt="Cliente" class="w-12 h-12 rounded-full">
-                        <div>
-                            <p class="font-bold">Roberto Santos</p>
-                            <p class="text-sm text-gray-400">Diretor de Vendas</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Testimonial 5 -->
-                <div class="testimonial-card fade-in delay-400">
-                    <div class="flex mb-4">
-                        <i class="fas fa-star text-magenta-bright"></i>
-                        <i class="fas fa-star text-magenta-bright"></i>
-                        <i class="fas fa-star text-magenta-bright"></i>
-                        <i class="fas fa-star text-magenta-bright"></i>
-                        <i class="fas fa-star text-magenta-bright"></i>
-                    </div>
-                    <p class="text-gray-300 mb-6 italic">
-                        "Melhor investimento que já fiz em mim mesma. O acompanhamento é próximo, humanizado e os resultados aparecem de forma consistente. Estou mais forte e confiante!"
-                    </p>
-                    <div class="flex items-center gap-4">
-                        <img src="https://i.pravatar.cc/150?img=45" alt="Cliente" class="w-12 h-12 rounded-full">
-                        <div>
-                            <p class="font-bold">Juliana Mendes</p>
-                            <p class="text-sm text-gray-400">Advogada</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Testimonial 6 -->
-                <div class="testimonial-card fade-in delay-500">
-                    <div class="flex mb-4">
-                        <i class="fas fa-star text-magenta-bright"></i>
-                        <i class="fas fa-star text-magenta-bright"></i>
-                        <i class="fas fa-star text-magenta-bright"></i>
-                        <i class="fas fa-star text-magenta-bright"></i>
-                        <i class="fas fa-star text-magenta-bright"></i>
-                    </div>
-                    <p class="text-gray-300 mb-6 italic">
-                        "Treino há 3 anos com a Jana e posso dizer: ela não é apenas uma profissional excepcional, é uma mentora que me inspira a ser melhor todos os dias."
-                    </p>
-                    <div class="flex items-center gap-4">
-                        <img src="https://i.pravatar.cc/150?img=15" alt="Cliente" class="w-12 h-12 rounded-full">
-                        <div>
-                            <p class="font-bold">Fernando Lima</p>
-                            <p class="text-sm text-gray-400">Empreendedor</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+            <div class="grid gap-8 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] lg:items-start">
+                <div class="order-2 rounded-[2rem] bg-charcoal p-8 text-sand shadow-soft-xl lg:order-1">
+                    <p class="text-sm font-semibold uppercase tracking-[0.28em] text-coral-soft">Pronto para conversar</p>
+                    <h2 class="mt-4 font-display text-3xl leading-tight sm:text-5xl">Preencha o formulário e receba um retorno mais alinhado ao seu momento.</h2>
+                    <p class="mt-5 text-base leading-relaxed text-sand/76 sm:text-lg">Preencha com as informações principais para receber um retorno mais coerente com seu objetivo, sua rotina e o formato que mais faz sentido para você.</p>
 
-    <!-- Final CTA Section -->
-    <section class="py-24 bg-gradient-to-br from-magenta-bright via-magenta to-purple-dark relative overflow-hidden">
-        <div class="absolute inset-0 opacity-20">
-            <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-white rounded-full blur-3xl animate-pulse"></div>
-        </div>
-        
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-            <div class="max-w-4xl mx-auto space-y-8 fade-in">
-                <h2 class="text-5xl sm:text-6xl font-black leading-tight">
-                    Pronto Para Transformar Sua Vida?
-                </h2>
-                <p class="text-2xl text-white/90">
-                    Não deixe para amanhã a mudança que pode começar hoje. 
-                    <br>Agende sua avaliação gratuita agora!
-                </p>
-                
-                <div class="flex flex-col sm:flex-row gap-4 justify-center pt-6">
-                    <a href="https://wa.me/5511999999999?text=Olá!%20Gostaria%20de%20agendar%20uma%20avaliação%20gratuita" 
-                       target="_blank"
-                       class="inline-flex items-center justify-center gap-3 bg-white text-purple-dark px-8 py-4 rounded-full text-lg font-bold hover:bg-gray-100 transition-all shadow-2xl hover:shadow-white/50 hover:scale-105">
-                        <i class="fab fa-whatsapp text-2xl"></i>
-                        Falar Agora no WhatsApp
-                    </a>
-                    <a href="#contato" 
-                       class="inline-flex items-center justify-center gap-3 bg-purple-deep text-white px-8 py-4 rounded-full text-lg font-bold hover:bg-purple-dark transition-all border-2 border-white/30 hover:scale-105">
-                        <i class="fas fa-envelope"></i>
-                        Preencher Formulário
-                    </a>
+                    <div class="mt-8 space-y-4">
+                        <div class="rounded-[1.5rem] border border-white/10 bg-white/5 p-5">
+                            <p class="text-sm font-bold text-coral-soft">O que vale informar</p>
+                            <p class="mt-2 text-sm leading-relaxed text-sand/74">Seu objetivo, o formato que mais te interessa e qualquer limitação ou contexto importante da sua rotina.</p>
+                        </div>
+                        <div class="rounded-[1.5rem] border border-white/10 bg-white/5 p-5">
+                            <p class="text-sm font-bold text-coral-soft">Se preferir contato imediato</p>
+                            <a href="https://wa.me/559187630955?text=Olá!%20Quero%20entender%20qual%20atendimento%20faz%20mais%20sentido%20para%20mim."
+                               target="_blank"
+                               rel="noopener noreferrer"
+                               class="mt-3 inline-flex items-center gap-3 rounded-full border border-coral/40 bg-coral/10 px-5 py-3 text-sm font-bold text-sand transition hover:border-coral hover:bg-coral hover:text-charcoal">
+                                <i class="fab fa-whatsapp text-lg"></i>
+                                Falar no WhatsApp
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                
-                <p class="text-sm text-white/70 pt-4">
-                    <i class="fas fa-lock mr-2"></i>
-                    Seus dados estão seguros e não serão compartilhados
-                </p>
-            </div>
-        </div>
-    </section>
 
-    <!-- Contact Form Section -->
-    <section id="contato" class="py-24 bg-purple-deep relative overflow-hidden">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="max-w-3xl mx-auto">
-                <!-- Header -->
-                <div class="text-center mb-12 fade-in">
-                    <span class="text-magenta-bright font-bold uppercase tracking-wider">Entre em Contato</span>
-                    <h2 class="text-4xl sm:text-5xl font-black mt-4 mb-6">
-                        Vamos Conversar Sobre 
-                        <span class="bg-gradient-to-r from-magenta-bright to-magenta text-transparent bg-clip-text">Seus Objetivos</span>
-                    </h2>
-                </div>
-                
-                <!-- Form -->
-                <form id="contactForm" class="space-y-6 bg-gradient-to-br from-purple-dark to-purple-medium p-8 rounded-2xl shadow-2xl border border-magenta-bright/20">
-                    <div class="grid md:grid-cols-2 gap-6">
+                <form id="contactForm" class="order-1 space-y-5 rounded-[2rem] bg-white p-6 shadow-soft-xl ring-1 ring-black/5 lg:order-2 lg:p-8">
+                    <div>
+                        <p class="text-sm font-semibold uppercase tracking-[0.26em] text-coral">Avaliação inicial</p>
+                        <h3 class="mt-3 text-2xl font-extrabold sm:text-3xl">Deixe os dados essenciais e eu retorno com a direção inicial.</h3>
+                    </div>
+
+                    <div class="grid gap-5 md:grid-cols-2">
                         <div>
-                            <label for="nome" class="block text-sm font-semibold mb-2">Nome Completo *</label>
-                            <input type="text" 
-                                   id="nome" 
-                                   name="nome" 
+                            <label for="nome" class="mb-2 block text-sm font-semibold text-charcoal">Nome *</label>
+                            <input type="text"
+                                   id="nome"
+                                   name="nome"
                                    required
-                                   class="w-full px-4 py-3 bg-purple-deep border border-gray-600 rounded-lg focus:outline-none focus:border-magenta-bright transition-colors text-white">
+                                   placeholder="Como você prefere ser chamado(a)?"
+                                   class="w-full rounded-2xl border border-black/10 bg-sand px-4 py-3 text-charcoal transition placeholder:text-charcoal/45 focus:outline-none focus:ring-0">
                         </div>
-                        
+
                         <div>
-                            <label for="telefone" class="block text-sm font-semibold mb-2">Telefone/WhatsApp *</label>
-                            <input type="tel" 
-                                   id="telefone" 
-                                   name="telefone" 
+                            <label for="telefone" class="mb-2 block text-sm font-semibold text-charcoal">WhatsApp *</label>
+                            <input type="tel"
+                                   id="telefone"
+                                   name="telefone"
                                    required
-                                   class="w-full px-4 py-3 bg-purple-deep border border-gray-600 rounded-lg focus:outline-none focus:border-magenta-bright transition-colors text-white">
+                                   placeholder="(00) 00000-0000"
+                                   class="w-full rounded-2xl border border-black/10 bg-sand px-4 py-3 text-charcoal transition placeholder:text-charcoal/45 focus:outline-none focus:ring-0">
                         </div>
                     </div>
-                    
-                    <div>
-                        <label for="email" class="block text-sm font-semibold mb-2">E-mail *</label>
-                        <input type="email" 
-                               id="email" 
-                               name="email" 
-                               required
-                               class="w-full px-4 py-3 bg-purple-deep border border-gray-600 rounded-lg focus:outline-none focus:border-magenta-bright transition-colors text-white">
+
+                    <div class="grid gap-5 md:grid-cols-2">
+                        <div>
+                            <label for="email" class="mb-2 block text-sm font-semibold text-charcoal">E-mail</label>
+                            <input type="email"
+                                   id="email"
+                                   name="email"
+                                   placeholder="seuemail@exemplo.com"
+                                   class="w-full rounded-2xl border border-black/10 bg-sand px-4 py-3 text-charcoal transition placeholder:text-charcoal/45 focus:outline-none focus:ring-0">
+                        </div>
+
+                        <div>
+                            <label for="empresa" class="mb-2 block text-sm font-semibold text-charcoal">Formato de interesse</label>
+                            <select id="empresa"
+                                    name="empresa"
+                                    class="w-full rounded-2xl border border-black/10 bg-sand px-4 py-3 text-charcoal transition focus:outline-none focus:ring-0">
+                                <option value="">Quero entender melhor</option>
+                                <option value="Consultoria online">Consultoria online</option>
+                                <option value="Personal presencial">Personal presencial</option>
+                                <option value="Pilates individual">Pilates individual</option>
+                                <option value="Pilates em grupo">Pilates em grupo</option>
+                            </select>
+                        </div>
                     </div>
-                    
+
                     <div>
-                        <label for="empresa" class="block text-sm font-semibold mb-2">Empresa/Ocupação</label>
-                        <input type="text" 
-                               id="empresa" 
-                               name="empresa"
-                               class="w-full px-4 py-3 bg-purple-deep border border-gray-600 rounded-lg focus:outline-none focus:border-magenta-bright transition-colors text-white">
+                        <label for="mensagem" class="mb-2 block text-sm font-semibold text-charcoal">Seu objetivo agora</label>
+                        <textarea id="mensagem"
+                                  name="mensagem"
+                                  rows="5"
+                                  placeholder="Conte brevemente o que você quer melhorar e se existe alguma limitação, rotina corrida ou preferência de atendimento."
+                                  class="w-full rounded-[1.5rem] border border-black/10 bg-sand px-4 py-3 text-charcoal transition placeholder:text-charcoal/45 focus:outline-none focus:ring-0"></textarea>
                     </div>
-                    
-                    <div>
-                        <label for="mensagem" class="block text-sm font-semibold mb-2">Mensagem *</label>
-                        <textarea id="mensagem" 
-                                  name="mensagem" 
-                                  rows="5" 
-                                  required
-                                  placeholder="Conte-nos sobre seus objetivos e como podemos ajudar..."
-                                  class="w-full px-4 py-3 bg-purple-deep border border-gray-600 rounded-lg focus:outline-none focus:border-magenta-bright transition-colors text-white resize-none"></textarea>
-                    </div>
-                    
-                    <button type="submit" class="w-full btn-primary justify-center text-lg py-4">
+
+                    <button type="submit" class="inline-flex w-full items-center justify-center gap-3 rounded-full bg-coral px-6 py-4 text-base font-extrabold text-charcoal transition hover:-translate-y-0.5 hover:bg-coral-soft">
                         <i class="fas fa-paper-plane"></i>
-                        Enviar Mensagem
-                        <i class="fas fa-arrow-right"></i>
+                        Solicitar avaliação
                     </button>
-                    
-                    <p class="text-sm text-gray-400 text-center">
-                        Ao enviar, você concorda com nossa <a href="#" class="text-magenta-bright hover:underline">Política de Privacidade</a>
-                    </p>
+
+                    <p class="text-center text-sm leading-relaxed text-charcoal/60">Assim que eu receber seus dados, retorno com uma orientação inicial e o melhor próximo passo para o seu caso.</p>
                 </form>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="bg-purple-deep border-t border-gray-800 py-12">
+    <footer class="border-t border-black/5 bg-[#f0e5d7] py-12">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
-                <!-- Logo and Description -->
-                <div class="space-y-4">
-                    <h3 class="text-2xl font-black">
-                        <span class="text-magenta-bright">#TEAM</span><span class="text-white">JANA</span>
-                    </h3>
-                    <p class="text-gray-400">
-                        Transformando vidas através do movimento, disciplina e excelência.
-                    </p>
-                    <div class="flex gap-4">
-                        <a href="#" class="social-icon">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a href="#" class="social-icon">
-                            <i class="fab fa-facebook"></i>
-                        </a>
-                        <a href="#" class="social-icon">
-                            <i class="fab fa-youtube"></i>
-                        </a>
-                        <a href="#" class="social-icon">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                    </div>
-                </div>
-                
-                <!-- Quick Links -->
+            <div class="grid gap-8 md:grid-cols-[1.2fr_0.8fr_0.8fr]">
                 <div>
-                    <h4 class="font-bold text-lg mb-4">Links Rápidos</h4>
-                    <ul class="space-y-2">
-                        <li><a href="#sobre" class="text-gray-400 hover:text-magenta-bright transition-colors">Sobre</a></li>
-                        <li><a href="#servicos" class="text-gray-400 hover:text-magenta-bright transition-colors">Serviços</a></li>
-                        <li><a href="#depoimentos" class="text-gray-400 hover:text-magenta-bright transition-colors">Depoimentos</a></li>
-                        <li><a href="#contato" class="text-gray-400 hover:text-magenta-bright transition-colors">Contato</a></li>
+                    <p class="text-sm font-semibold uppercase tracking-[0.28em] text-coral">Consultoria Fitness</p>
+                    <h2 class="mt-4 font-display text-3xl leading-tight">Treino com direção, acompanhamento próximo e atendimento online ou presencial.</h2>
+                    <p class="mt-4 max-w-xl text-sm leading-relaxed text-charcoal/68">Consultoria fitness para quem quer organizar a rotina, evoluir com mais segurança e manter constância no processo.</p>
+                </div>
+
+                <div>
+                    <p class="text-sm font-semibold uppercase tracking-[0.24em] text-charcoal/55">Navegação</p>
+                    <ul class="mt-4 space-y-3 text-sm text-charcoal/72">
+                        <li><a href="#hero" class="transition hover:text-coral">Início</a></li>
+                        <li><a href="#servicos" class="transition hover:text-coral">Serviços</a></li>
+                        <li><a href="#sobre" class="transition hover:text-coral">Como funciona</a></li>
+                        <li><a href="#contato" class="transition hover:text-coral">Formulário</a></li>
                     </ul>
                 </div>
-                
-                <!-- Services -->
+
                 <div>
-                    <h4 class="font-bold text-lg mb-4">Serviços</h4>
-                    <ul class="space-y-2">
-                        <li><a href="#servicos" class="text-gray-400 hover:text-magenta-bright transition-colors">Consultoria Personalizada</a></li>
-                        <li><a href="#servicos" class="text-gray-400 hover:text-magenta-bright transition-colors">Atendimento Online</a></li>
-                        <li><a href="#servicos" class="text-gray-400 hover:text-magenta-bright transition-colors">Pilates</a></li>
-                        <li><a href="#servicos" class="text-gray-400 hover:text-magenta-bright transition-colors">Grupos Especiais</a></li>
-                    </ul>
-                </div>
-                
-                <!-- Contact Info -->
-                <div>
-                    <h4 class="font-bold text-lg mb-4">Contato</h4>
-                    <ul class="space-y-3">
-                        <li class="flex items-start gap-3 text-gray-400">
-                            <i class="fas fa-phone text-magenta-bright mt-1"></i>
-                            <span>(11) 99999-9999</span>
-                        </li>
-                        <li class="flex items-start gap-3 text-gray-400">
-                            <i class="fab fa-whatsapp text-magenta-bright mt-1"></i>
-                            <a href="https://wa.me/5511999999999" class="hover:text-magenta-bright transition-colors">(11) 99999-9999</a>
-                        </li>
-                        <li class="flex items-start gap-3 text-gray-400">
-                            <i class="fas fa-envelope text-magenta-bright mt-1"></i>
-                            <a href="mailto:contato@teamjana.com" class="hover:text-magenta-bright transition-colors">contato@teamjana.com</a>
-                        </li>
-                        <li class="flex items-start gap-3 text-gray-400">
-                            <i class="fas fa-map-marker-alt text-magenta-bright mt-1"></i>
-                            <span>São Paulo, SP</span>
-                        </li>
+                    <p class="text-sm font-semibold uppercase tracking-[0.24em] text-charcoal/55">Contato</p>
+                    <ul class="mt-4 space-y-3 text-sm text-charcoal/72">
+                        <li class="flex items-start gap-3"><i class="fab fa-whatsapp mt-0.5 text-coral"></i><a href="https://wa.me/559187630955" target="_blank" rel="noopener noreferrer" class="transition hover:text-coral">+55 91 8763-0955</a></li>
+                        <li class="flex items-start gap-3"><i class="fas fa-envelope mt-0.5 text-coral"></i><a href="mailto:janna180@gmail.com" class="transition hover:text-coral">janna180@gmail.com</a></li>
+                        <li class="flex items-start gap-3"><i class="fas fa-location-dot mt-0.5 text-coral"></i><span>Atendimento online e presencial</span></li>
                     </ul>
                 </div>
             </div>
-            
-            <!-- Bottom Footer -->
-            <div class="border-t border-gray-800 pt-8 mt-8">
-                <div class="flex flex-col md:flex-row justify-between items-center gap-4 text-gray-400 text-sm">
-                    <p>&copy; 2026 Sousa Consultoria. Todos os direitos reservados.</p>
-                    <div class="flex gap-6">
-                        <a href="#" class="hover:text-magenta-bright transition-colors">Política de Privacidade</a>
-                        <a href="#" class="hover:text-magenta-bright transition-colors">Termos de Uso</a>
-                    </div>
+
+            <div class="mt-10 flex flex-col gap-4 border-t border-black/5 pt-6 text-sm text-charcoal/58 sm:flex-row sm:items-center sm:justify-between">
+                <p>&copy; 2026 Consultoria Fitness. Todos os direitos reservados.</p>
+                <div class="flex gap-5">
+                    <a href="#" class="transition hover:text-coral">Política de Privacidade</a>
+                    <a href="#" class="transition hover:text-coral">Termos de Uso</a>
                 </div>
             </div>
         </div>
     </footer>
 
-    <!-- WhatsApp Floating Button -->
-    <a href="https://wa.me/5511999999999?text=Olá!%20Vim%20pelo%20site%20e%20gostaria%20de%20mais%20informações" 
-       target="_blank"
-       class="fixed bottom-6 right-6 bg-gradient-to-br from-magenta-bright to-magenta text-white w-16 h-16 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-all z-50 animate-pulse">
-        <i class="fab fa-whatsapp text-3xl"></i>
-    </a>
+    <div class="mobile-cta-bar fixed inset-x-0 bottom-0 z-40 border-t border-white/10 bg-charcoal/95 px-4 py-3 backdrop-blur lg:hidden">
+        <div class="mx-auto flex max-w-lg items-center gap-3">
+            <a href="#contato" class="inline-flex flex-1 items-center justify-center gap-2 rounded-full bg-coral px-4 py-3 text-sm font-extrabold text-charcoal transition hover:bg-coral-soft">
+                <i class="fas fa-clipboard-list"></i>
+                Formulário
+            </a>
+            <a href="https://wa.me/559187630955?text=Olá!%20Quero%20entender%20qual%20atendimento%20faz%20mais%20sentido%20para%20mim."
+               target="_blank"
+               rel="noopener noreferrer"
+               class="inline-flex items-center justify-center gap-2 rounded-full border border-coral/40 bg-white/5 px-4 py-3 text-sm font-bold text-sand transition hover:border-coral hover:text-coral">
+                <i class="fab fa-whatsapp"></i>
+                WhatsApp
+            </a>
+        </div>
+    </div>
 
-    <!-- Back to Top Button -->
-    <button id="backToTop" 
-            class="fixed bottom-6 left-6 bg-purple-dark text-magenta-bright w-12 h-12 rounded-full flex items-center justify-center shadow-lg hover:bg-purple-medium transition-all opacity-0 pointer-events-none z-50">
+    <button id="backToTop"
+            class="fixed bottom-24 right-4 z-50 flex h-12 w-12 items-center justify-center rounded-full bg-charcoal text-coral shadow-lg transition-all opacity-0 pointer-events-none hover:bg-charcoal-soft lg:bottom-6">
         <i class="fas fa-arrow-up"></i>
     </button>
 
